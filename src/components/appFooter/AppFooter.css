@@ -1,0 +1,45 @@
+.appFooter{
+	grid-area: footer;
+	/* height: auto; */
+	text-align: center;
+	background-color: #2F4F4F;
+}
+.appFooter__container{
+	max-width: 1046px;
+	margin: 0px auto; 
+	display: flex;
+	justify-content: space-between;
+	min-height: 50px;
+	
+}
+.social__media{
+	width: 33.333%;
+	justify-content: space-around;
+	display: flex;
+	align-items: flex-start;
+	margin-top: 5px;
+}
+.appFooter__logo{
+	width: 33.333%;
+	margin-top: 15px;
+}
+.appFooter__adress{
+	width: 33.333%;
+	margin-top: 15px;
+}
+.appFooter__adress .phone__number{
+	text-decoration: none;
+	color: #fff;
+	margin-right: 10px;
+}
+
+.appFooter__adress .adress{
+	text-decoration: none;
+	color: #fff;
+}
+
+.appFooter__logo{
+	text-decoration: none;
+	color: #fff;
+	font-size: 30px;
+}

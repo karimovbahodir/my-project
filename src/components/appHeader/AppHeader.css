@@ -1,0 +1,52 @@
+.__container{
+	max-width: 1046px;
+	margin: 0px auto; 
+}
+.appHeader {
+	width: 100%;
+	left: 0;
+	top: 0;
+	grid-area: header;
+	background-color: #2F4F4F;
+}
+.appHeader__container{
+	display: flex;
+	min-height: 50px;
+	align-items: center;
+}
+.appHeader__logo{
+	text-align: center;
+}
+.search-box{
+	width: 60%;
+	
+}
+
+.search-txt{
+	height: 30px;
+	border-radius: 10px;
+	margin: 0 10px 0 0;
+	width: 80%;
+	
+}
+
+.icons{
+	width: 20%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3px;
+}
+
+
+.button__main{
+	height: 33px;
+	border-radius: 10px;
+}
+
+
+.appHeader__logo{
+	text-decoration: none;
+	font-size: 30px;
+	color: #fff;
+	width: 20%;
+}

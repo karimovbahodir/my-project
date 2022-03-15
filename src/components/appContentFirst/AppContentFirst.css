@@ -1,0 +1,21 @@
+.appContentFirst__container{
+	max-width: 1046px;
+	margin: 0px auto;
+}
+.appContentFirst{
+	grid-area: contentFirst;
+	width: 100%;
+	left: 0;
+	top: 0; 
+}
+.appContentFirst__container{
+	max-width: 1046px;
+	margin: 0px auto;
+}
+.cupcakes{
+	width: 100%;
+	height: 100%;
+}
+.appContentFirst__cupcakes{
+	min-height: 400px;
+}

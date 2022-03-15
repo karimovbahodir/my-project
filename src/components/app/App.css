@@ -1,0 +1,38 @@
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	display:grid;
+
+	grid-template-areas: 
+	"header header"
+	"content content"
+	"footer footer";
+
+	grid-template-rows: 60px 1fr 60px;
+	grid-template-columns: 100%;
+	grid-gap: 10px;
+}
+
+.content{
+	min-height: 100%;
+	overflow: hidden;
+	grid-area: content;
+}
+
+.all__content{
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.content__container{
+	display: grid;
+	grid-template-areas: 
+	"contentFirst contentSec";
+	grid-template-rows: 100%;
+	grid-template-columns: 50% 50%;
+	grid-gap: 5px;
+	max-width: 1046px;
+	margin: 0px auto; 
+}
+
