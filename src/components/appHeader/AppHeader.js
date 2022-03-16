@@ -2,17 +2,9 @@ import { Component } from "react";
 import './AppHeader.css';
 
 
-class AppHeader extends Component {
-	constructor(props) {
-		super(props)
-		this.state = {
-
-		}
-	}
+const AppHeader =(props)=> {
 
 
-
-	render() {
 		return (
 			<div className="appHeader">
 				<div className="appHeader__container _container">
@@ -33,13 +25,13 @@ class AppHeader extends Component {
 							<img src="https://cdn.icon-icons.com/icons2/1580/PNG/128/2849824-basket-buy-market-multimedia-shop-shopping-store_107977.png" />
 						</div>
 						<button className="button button__main">
-							<div className="inner">Sign up</div>
+							<div className="inner"
+							onClick={()=>props.setModalActive(true)}>Sign up</div>
 						</button>
 					</div>
 				</div>
 			</div>
 		)
-	}
 }
 
 

@@ -1,0 +1,64 @@
+.modal{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.modal.active{	
+	opacity: 1;
+	pointer-events: all;
+}
+
+.modal__content{
+	padding: 20px;
+	border-radius: 12px;
+	background-color: white;
+	transform: scale(0.5);
+	transition: 0.4s all;
+	width: 25%;
+}
+
+.modal__content.active{
+	transform: scale(1);
+}
+
+.form h2{
+	margin: 30px 100px;
+	padding: 0;
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+
+}
+
+.input-form{
+	margin: 15px 40px;
+	text-align: center;
+}
+
+.input-form input{
+	padding: 10px;
+	width: 100%;
+	font-size: 16px;
+}
+
+.button__main{
+	margin-left: 40px;
+	margin-bottom: 10px;
+}
+.submit a{
+	text-decoration: none;
+	font-size: 15px;
+	margin-left: 40px;
+}
+a.forget{
+	margin-bottom: 50px;
+}

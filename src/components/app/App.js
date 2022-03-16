@@ -5,16 +5,20 @@ import AppFooter from "../appFooter/AppFooter";
 import AppHeader from "../appHeader/AppHeader";
 import Cards from "../Cards/Card";
 import Sidebar from "../sidebar/Sidebar";
+import Modal from "../modal/Modal";
 
 import './App.css';
 
 
 const App = () => {
+
+	const [modalActive, setModalActive, children]=useState(false);
 	
 	return (
 		<div className="wrapper">
+			<Modal active={modalActive} setActive={setModalActive}> {children} </Modal>
 			<Sidebar />
-			<AppHeader />
+			<AppHeader setModalActive={setModalActive}/>
 			<div className="content">
 				<div className="all__content">
 					<div className="content__container">
