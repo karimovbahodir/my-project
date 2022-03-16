@@ -5,10 +5,11 @@ import AppHeader from "../appHeader/AppHeader";
 import Cards from "../cards/Card";
 import Sidebar from "../sidebar/Sidebar";
 
+
 import './App.css';
 
 
-const App = () => {
+const App = ({data}) => {
 	
 	return (
 		<div className="wrapper">
@@ -21,7 +22,7 @@ const App = () => {
 						<AppContentSec />
 					</div>
 				</div>
-				<Cards />
+				<Cards data={data}/>
 			</div>
 			<AppFooter />
 		</div>

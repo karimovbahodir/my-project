@@ -71,11 +71,11 @@
    font-weight: 400;
    font-size: 14px;
 }
-.info__prise{
+.info__price{
    display: flex;
    flex-direction: column;
 }
-.info__prise span{
+.info__price span{
    font-size: 12px;
    opacity: 0.5;
 }
