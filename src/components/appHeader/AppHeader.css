@@ -1,22 +1,16 @@
-.__container{
-	max-width: 1046px;
-	margin: 0px auto; 
-}
+
 .appHeader {
 	width: 100%;
-	left: 0;
-	top: 0;
 	grid-area: header;
 	background-color: #2F4F4F;
 }
 .appHeader__container{
 	display: flex;
-	min-height: 50px;
+	justify-content: space-between;
+	height: 100%;
 	align-items: center;
 }
-.appHeader__logo{
-	text-align: center;
-}
+
 .search-box{
 	width: 60%;
 	
@@ -34,15 +28,33 @@
 	width: 20%;
 	display: flex;
 	justify-content: space-between;
-	margin-top: 3px;
+	align-items: center;
 }
 
 
 .button__main{
+	min-width: 80px;
 	height: 33px;
 	border-radius: 10px;
+	font-family: inherit;
+	appearance: none;
+	border: 0;
+	border-radius: 10px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+.button__main:hover{
+	background: #667caa;
+}
+.button__main:focus{
+	outline: none;
+  	box-shadow: 0 0 0 3px #cbd6ee;
 }
 
+.icons img{
+	max-width: 40px;
+
+}
 
 .appHeader__logo{
 	text-decoration: none;

@@ -11,6 +11,10 @@ body {
 	font-family: Montserrat;
 }
 
+._container{
+	max-width: 1046px;
+	margin: 0px auto; 
+}
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }

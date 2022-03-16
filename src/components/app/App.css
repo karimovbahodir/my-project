@@ -11,6 +11,8 @@
 	grid-template-rows: 60px 1fr 60px;
 	grid-template-columns: 100%;
 	grid-gap: 10px;
+
+	position: relative;
 }
 
 .content{
@@ -27,6 +29,7 @@
 
 .content__container{
 	display: grid;
+	box-sizing: border-box;
 	grid-template-areas: 
 	"contentFirst contentSec";
 	grid-template-rows: 100%;

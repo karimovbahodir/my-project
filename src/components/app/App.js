@@ -1,36 +1,32 @@
-import { Component } from "react";
-import AppContentFirst from "../appContentFirst/AppContentFirst";
+import {useState} from 'react';
+import Cupcakes from "../cupecakes/Cupcakes";
 import AppContentSec from "../appContentSec/AppContentSec";
 import AppFooter from "../appFooter/AppFooter";
 import AppHeader from "../appHeader/AppHeader";
+import Cards from "../Cards/Card";
+import Sidebar from "../sidebar/Sidebar";
+
 import './App.css';
 
-class App extends Component {
-	constructor(props){
-		super(props);
-		this.state={
-		
-		}
-	}
 
-
-
-	render(){
-		return (
-			<div className="wrapper">
-				<AppHeader />
-				<div className="content">
-					<div className="all__content">
-						<div className="content__container">
-							<AppContentFirst />
-							<AppContentSec />
-						</div>
+const App = () => {
+	
+	return (
+		<div className="wrapper">
+			<Sidebar />
+			<AppHeader />
+			<div className="content">
+				<div className="all__content">
+					<div className="content__container">
+						<Cupcakes />
+						<AppContentSec />
 					</div>
 				</div>
-				<AppFooter />
+				<Cards />
 			</div>
-		)
-	}
+			<AppFooter />
+		</div>
+	)
 }
 
 export default App;

@@ -1,0 +1,95 @@
+.cards{
+   padding: 40px;
+}
+.cards__title{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 40px;
+}
+.search__block{
+   border: 1px solid #f3f3f3;
+   width: 250px;
+   display: flex;
+   align-items: center;
+   border-radius: 10px;
+   padding: 0 10px;
+}
+.search__block img{
+   width: 20px;
+   height: 20px;
+   margin-right: 5px;
+}
+.search__input{
+   border: 0;
+   font-style: 16px;
+   padding: 10px;
+
+
+}
+.cards__list{
+   display: flex;
+}
+.card{
+   border: 1px solid #f3f3f3;
+   padding: 20px;
+   width: 220px;
+   border-radius: 40px;
+   margin-right: 30px;
+   position: relative;
+   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; 
+
+}
+.card:hover{
+   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.07);
+   transform: translateY(-5px);
+}
+.favorite{
+   position: absolute;
+   left: 0;
+   top: 0;
+   cursor: pointer;
+   
+}
+.favorite__img{
+   width: 50px;
+   height: 50px;
+}
+.card__img{
+   width: 173px;
+   height: 152px;
+   margin: 25px;
+}
+.card__info{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.card__text{
+   font-weight: 400;
+   font-size: 14px;
+}
+.info__prise{
+   display: flex;
+   flex-direction: column;
+}
+.info__prise span{
+   font-size: 12px;
+   opacity: 0.5;
+}
+.info__button{
+   background: #fff;
+   border: 1px solid #f3f3f3;
+   box-sizing: border-box;
+   border-radius: 8px;
+   width: 32px;
+   height: 32px;
+   cursor: pointer;
+
+}
+.info__button img{
+   width: 11px;
+   height: 11px;
+}
