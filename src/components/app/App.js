@@ -1,9 +1,8 @@
-import {useState} from 'react';
 import Cupcakes from "../cupecakes/Cupcakes";
 import AppContentSec from "../appContentSec/AppContentSec";
 import AppFooter from "../appFooter/AppFooter";
 import AppHeader from "../appHeader/AppHeader";
-import Cards from "../Cards/Card";
+import Cards from "../cards/Card";
 import Sidebar from "../sidebar/Sidebar";
 
 import './App.css';
