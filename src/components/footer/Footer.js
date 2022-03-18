@@ -1,4 +1,4 @@
-import './AppFooter.css';
+import './footer.css';
 
 const AppFooter = () => {
 	return (
@@ -20,4 +20,4 @@ const AppFooter = () => {
 	)
 }
 
-export default AppFooter;
+export default Footer;

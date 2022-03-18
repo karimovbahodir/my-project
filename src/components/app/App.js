@@ -2,7 +2,7 @@ import { useState, useEffect} from 'react';
 
 import Cupcakes from "../cupecakes/Cupcakes";
 import AppContentSec from "../appContentSec/AppContentSec";
-import AppFooter from "../appFooter/AppFooter";
+import Footer from "../footer/Footer";
 import AppHeader from "../appHeader/AppHeader";
 import Cards from "../cards/Card";
 import Sidebar from "../sidebar/Sidebar";
@@ -40,7 +40,7 @@ const App = () => {
 				</div>
 				<Cards data={items} onPlus={onPlus} />
 			</div>
-			<AppFooter />
+			<Footer />
 		</div>
 	)
 }
