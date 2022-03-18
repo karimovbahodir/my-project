@@ -3,7 +3,7 @@ import { useState, useEffect} from 'react';
 import Cupcakes from "../cupecakes/Cupcakes";
 import AppContentSec from "../appContentSec/AppContentSec";
 import Footer from "../footer/Footer";
-import AppHeader from "../appHeader/AppHeader";
+import AppHeader from "../header/AppHeader";
 import Cards from "../cards/Card";
 import Sidebar from "../sidebar/Sidebar";
 
