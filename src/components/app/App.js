@@ -1,21 +1,28 @@
 import {useState} from 'react';
 import Cupcakes from "../cupecakes/Cupcakes";
-import AppContentSec from "../appContentSec/AppContentSec";
+import Cakes from '../cakes/Cakes';
 import AppFooter from "../appFooter/AppFooter";
 import AppHeader from "../appHeader/AppHeader";
 import Cards from "../Cards/Card";
 import Sidebar from "../sidebar/Sidebar";
 import Modal from "../modal/Modal";
 
+
+
 import './App.css';
+
+
+
 
 
 const App = () => {
 
-	const [modalActive, setModalActive, children]=useState(false);
+	const [modalActive, setModalActive , children ]=useState(false);
+	
 	
 	return (
 		<div className="wrapper">
+			
 			<Modal active={modalActive} setActive={setModalActive}> {children} </Modal>
 			<Sidebar />
 			<AppHeader setModalActive={setModalActive}/>
@@ -23,10 +30,10 @@ const App = () => {
 				<div className="all__content">
 					<div className="content__container">
 						<Cupcakes />
-						<AppContentSec />
+						<Cakes />
 					</div>
 				</div>
-				<Cards />
+				<Cards /> 
 			</div>
 			<AppFooter />
 		</div>

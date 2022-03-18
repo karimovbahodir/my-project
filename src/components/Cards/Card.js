@@ -20,7 +20,7 @@ const Cards = () => {
                <div className="card__info">
                   <div className="info__prise">
                      <span>Prise</span>
-                     <b>555 $</b>
+                     <b>555 $</b> 
                   </div>
                   <button className="info__button">
                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Feather-core-plus-circle.svg/1200px-Feather-core-plus-circle.svg.png" alt="plus" />

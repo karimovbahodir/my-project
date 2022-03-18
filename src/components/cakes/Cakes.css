@@ -1,27 +1,23 @@
-
-.cupecakes__container{
-	grid-area: contentFirst;
+.cakes__container{
 	width: 100%;
-	left: 0px;
-	top: 0px; 
+	left: 0;
+	top: 0;
+	grid-area: contentSec;
 }
 
-.cupecake{
-	padding-top: 5px;
-	display: block;
+.cakes{
 	width: 100%;
 	height: 100%;
 	border-radius: 20px;
-	
+	padding-top: 5px;
 }
 
-.cupecakes__block:hover{
+.cakes__block:hover{
    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.07);
    transform: translateY(-5px);
-	
 }
 
-.cupecakes__block{
+.cakes__block{
 	float: left;
 	overflow: hidden;
 	position: relative;
@@ -29,19 +25,19 @@
 
 }
 
-.cupecakes__block .content {
+.cakes__block .content {
 	position: absolute;
 	overflow: hidden;
 	top: 90%;
-	left: 23%;
+	left: 35%;
 }
 
-.cupecakes__block a img {
+.cakes__block a img {
 	display: block;
 	position: relative;
 }
 
-.cupecakes__block .content a {
+.cakes__block .content a {
 	display: inline-block;
 	text-decoration: none;
 	font-size: 50px;
@@ -49,12 +45,11 @@
 	text-transform: uppercase;
 }
 
-.cupecakes-view .content a{
+.cakes-view .content a{
 	background-color: rgba(12 19 27 0.6);
 	opacity: 0;
 }
 
-.cupecakes-view:hover .content a{
+.cakes-view:hover .content a{
 	opacity: 1;
 }
-

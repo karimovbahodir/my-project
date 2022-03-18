@@ -2,7 +2,7 @@ import { Component } from "react";
 import './AppHeader.css';
 
 
-const AppHeader =(props)=> {
+const AppHeader =({setModalActive})=> {
 
 
 		return (
@@ -17,7 +17,7 @@ const AppHeader =(props)=> {
 							<div className="inner">Search</div>
 						</button>
 					</div> */}
-					<div className="icons">
+					<div className="icons"> 
 						<div className="favorites">
 							<img src="https://img.icons8.com/material-outlined/32/000000/like--v1.png" />
 						</div>
@@ -26,10 +26,10 @@ const AppHeader =(props)=> {
 						</div>
 						<button className="button button__main">
 							<div className="inner"
-							onClick={()=>props.setModalActive(true)}>Sign up</div>
+							onClick={()=>setModalActive(true)}>Sign up</div>
 						</button>
 					</div>
-				</div>
+				</div> 
 			</div>
 		)
 }
