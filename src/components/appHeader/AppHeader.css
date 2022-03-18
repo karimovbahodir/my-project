@@ -11,27 +11,12 @@
 	align-items: center;
 }
 
-.search-box{
-	width: 60%;
-	
-}
-
-.search-txt{
-	height: 30px;
-	border-radius: 10px;
-	margin: 0 10px 0 0;
-	width: 80%;
-	
-}
-
 .icons{
 	width: 20%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-
-
 .button__main{
 	min-width: 80px;
 	height: 33px;
@@ -52,7 +37,8 @@
 }
 
 .icons img{
-	max-width: 40px;
+	max-width: 35px;
+	cursor: pointer;
 
 }
 
