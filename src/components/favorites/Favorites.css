@@ -3,6 +3,7 @@
 }
 .cards__title{
    display: flex;
+   flex-direction: column;
    align-items: center;
    justify-content: space-between;
    margin-bottom: 40px;
@@ -25,8 +26,6 @@
    border: 0;
    font-style: 16px;
    padding: 10px;
-
-
 }
 .cards__list{
    display: flex;
@@ -61,8 +60,9 @@
    
 }
 .favorite__img{
-   width: 50px;
-   height: 50px;
+   width: 22px;
+   height: 22px;
+   padding: 11px;
 }
 .card__img{
    width: 205px;

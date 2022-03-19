@@ -8,7 +8,7 @@
 	z-index: 10;
 	
 }
-.sidebar{
+.cart{
    display: flex;
    flex-direction: column;
    position: absolute;
@@ -21,7 +21,7 @@
 
 }
 
-.sidebar__title{
+.cart__title{
    margin: 0;
    font-size: 24px;
    margin-bottom: 30px;
@@ -33,6 +33,18 @@
 .cart__items{
    overflow: auto;
    margin-bottom: 40px;
+}
+.cart__empty{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-top: 40px;
+}
+.cart__empty-title{
+   text-align: center;
+   margin-bottom: 20px;
+   font-style: italic;
 }
 .cart__item{
    display: flex;
@@ -97,12 +109,12 @@
    color: #f2f2f2;
 }
 
-.sidebar__sum{
+.cart__sum{
    display: flex;
    justify-content: space-between;
    margin: 30px 15px;
 
 }
-.sidebar__sum p{
+.cart__sum p{
    margin: 0;
 }

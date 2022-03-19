@@ -1,8 +1,9 @@
 
-import './AppHeader.css';
+import './Header.css';
 
 
-const AppHeader =({openSidebar})=> {
+const Header =({openCart, openFavorites})=> {
+		
 		return (
 			<div className="appHeader">
 				<div className="appHeader__container _container">
@@ -10,10 +11,10 @@ const AppHeader =({openSidebar})=> {
 						<a href="#" className="appHeader__logo">Logo</a>
 					</div>
 					<div className="icons">
-						<div className="favorites">
+						<div className="favorites" onClick={openFavorites}>
 							<img src="https://img.icons8.com/material-outlined/32/000000/like--v1.png" />
 						</div>
-						<div className="basket" onClick = {openSidebar}>
+						<div className="basket" onClick = {openCart}>
 							<img src="https://cdn.icon-icons.com/icons2/1580/PNG/128/2849824-basket-buy-market-multimedia-shop-shopping-store_107977.png" />
 						</div>
 						<button className="button button__main">
@@ -26,4 +27,4 @@ const AppHeader =({openSidebar})=> {
 }
 
 
-export default AppHeader;
+export default Header;

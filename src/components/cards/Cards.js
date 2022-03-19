@@ -1,34 +1,8 @@
 import {useState} from 'react';
+import Card from '../card/Card';
+import './Cards.css';
 
-import './Card.css';
-
-
-const Card = ({name, price, img, onPlus}) => {
-   const [add, setAdd] = useState(false);
-   return (
-      <div className="card">
-         <div className="favorite">
-            <img src="https://endlessicons.com/wp-content/uploads/2013/06/heart-icon.png" alt="heart" className="favorite__img" />
-         </div>
-         <img src={img} alt="cake" className="card__img" />
-         <p className="card__text">{name}</p>
-         <div className="card__info">
-            <div className="info__price">
-               <span>Цена: </span>
-               <b>{price}</b>
-            </div>
-            <button className="info__button" onClick={()=>{
-               onPlus({name, price, img});
-               setAdd(!add)
-            }}>
-               <img src={add ? 'https://cdn.picpng.com/check/check-button-computer-icon-116893.png' : "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Feather-core-plus-circle.svg/1200px-Feather-core-plus-circle.svg.png"} alt="plus" />
-            </button>
-         </div>
-      </div>
-   )
-}
-
-const Cards = ({onPlus, data}) => {
+const Cards = ({onPlus, data, onLike}) => {
    const [searching, setSearching] = useState('');
 
    const getSearchingValue = (e)=>{
@@ -50,6 +24,7 @@ const Cards = ({onPlus, data}) => {
       price={item.price} 
       img={item.img}
       onPlus={() => onPlus(item)}
+      onLike={()=> onLike(item)}
     />
    });
    return (

@@ -1,0 +1,58 @@
+.cards{
+   padding: 40px;
+}
+.cards__title{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 40px;
+   padding-left: 20px;
+}
+.search__block{
+   border: 1px solid #f3f3f3;
+   width: 250px;
+   display: flex;
+   align-items: center;
+   border-radius: 10px;
+   padding: 0 10px;
+}
+.search__block img{
+   width: 20px;
+   height: 20px;
+   margin-right: 5px;
+}
+.search__input{
+   border: 0;
+   font-style: 16px;
+   padding: 10px;
+}
+.cards__list{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.info__price{
+   display: flex;
+   flex-direction: column;
+}
+.info__price span{
+   font-size: 14px;
+   opacity: 0.5;
+   line-height: 1.2em;
+   
+}
+.info__button{
+   background: #fff;
+   border: 1px solid #f3f3f3;
+   box-sizing: border-box;
+   border-radius: 8px;
+   width: 32px;
+   height: 32px;
+   cursor: pointer;
+
+}
+.info__button img{
+   width: 15px;
+   height: 15px;
+}
