@@ -1,6 +1,6 @@
-import './AppFooter.css';
+import './Footer.css';
 
-const AppFooter = () => {
+const Footer = () => {
 	return (
 		<div className="appFooter">
 			<div className="appFooter__container">
@@ -20,4 +20,4 @@ const AppFooter = () => {
 	)
 }
 
-export default AppFooter;
+export default Footer;
