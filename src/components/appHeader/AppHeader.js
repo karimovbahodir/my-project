@@ -1,9 +1,50 @@
-import { Component } from "react";
+import { useContext } from "react";
+import { ModalContext } from "../context";
+import ModalReg from '../modalReg/ModalReg';
+import ModalPass from "../modalPass/ModalPass"; 
 import './AppHeader.css';
 
 
-const AppHeader =({setModalActive})=> {
+const AppHeader =(props)=> {
 
+	const { openModal } = useContext(ModalContext);
+
+	const handlarReg=()=>{
+		openModal({
+			title: "регистрация",
+			children: <ModalReg/>
+		})
+	}
+
+	const handlarPass=()=>{
+		openModal({
+			title: "ВОССТАНОВЛЕНИЕ ПАРОЛЯ",
+			children: <ModalPass/>
+		})
+	}
+
+	const handlerClick = () => {
+		openModal({
+			title: "вход",
+			children: <>
+				<div className="input-form">
+					<input type="text" placeholder='Введите номер телефона или email' />
+				</div>
+				<div className="input-form">
+					<input type="text" placeholder='Пароль' />
+				</div>
+				<button className="button button__main">
+					<div className="inner">Войти</div>
+				</button>
+				<div className="submit">
+					<a href='#' className='forget'
+					onClick={handlarPass}>Забыли пароль?</a>
+					<a href='#' className='reg'
+					onClick={handlarReg}>Создать аккаунт</a>
+				</div>
+			</>
+		});
+	}
 
 		return (
 			<div className="appHeader">
@@ -25,8 +66,7 @@ const AppHeader =({setModalActive})=> {
 							<img src="https://cdn.icon-icons.com/icons2/1580/PNG/128/2849824-basket-buy-market-multimedia-shop-shopping-store_107977.png" />
 						</div>
 						<button className="button button__main">
-							<div className="inner"
-							onClick={()=>setModalActive(true)}>Sign up</div>
+							<div className="inner" onClick={handlerClick}>Войти</div>
 						</button>
 					</div>
 				</div> 

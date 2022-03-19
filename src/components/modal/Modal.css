@@ -1,43 +1,74 @@
-.modal{
-	width: 100%;
-	height: 100%;
+@keyframes showBackdrop{
+	0%{
+		opacity: 0;
+
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes showModal{
+	0%{
+		opacity: 0;
+		transform: translateY(-500px);
+	}
+	
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+
+}
+
+.backdrop{
 	background-color: rgba(0, 0, 0, 0.5);
 	position: fixed;
 	top: 0;
 	left: 0;
+	right: 0;
+	bottom: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	opacity: 0;
-	pointer-events: none;
-	transition: 0.5s;
-	z-index: 10;
+	
+	transition: all 0.3s;
+	animation: showBackdrop 0.3s ease-out;
+	z-index: 1;
 }
-.modal.active{	
-	opacity: 1;
-	pointer-events: all;
+.modal{	
+	background: #ffffff;
+	min-width: 400px;
+	min-height: 300px;
+
+	transition: all 0.3s;
+	animation: showModal 0.3s ease-out;
 }
 
-.modal__content{
-	padding: 20px;
-	border-radius: 12px;
-	background-color: white;
-	transform: scale(0.5);
-	transition: 0.4s all;
-	width: 25%;
+.modal-header{
+	padding: 10px 20px;
+	border-bottom: 1px solid rgb(219 219 219);
 }
 
-.modal__content.active{
-	transform: scale(1);
-}
-
-.form h2{
-	margin: 30px 100px;
-	padding: 0;
+.modal-header h3{
+	margin: 0;
+	font-size: 20px;
 	text-align: center;
-	font-size: 30px;
 	text-transform: uppercase;
+	color: #2F4F4F;
+}
 
+.modal-body{
+	padding: 10px 20px 10px 0;
+}
+
+.backdrop-hide{
+	opacity: 0;
+}
+
+.backdrop-hide .modal{
+	opacity: 0;
+	transform: translateY(-500px);
 }
 
 .input-form{
