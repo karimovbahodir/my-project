@@ -6,7 +6,7 @@ const Cakes = (props) => {
 		<div className='cakes__container'>
 			<div className='cakes__block cakes-view'>
 			<a href='#'><img src='https://mykaleidoscope.ru/uploads/posts/2020-01/1579936217_37-p-fruktovie-torti-77.jpg' className='cakes' /></a>
-			<diV className='content'><a href='#' >cakes</a></diV>
+			<div className='content'><a href='#' >cakes</a></div>
 			</div>
 		</div>
 	)

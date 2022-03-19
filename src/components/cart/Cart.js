@@ -1,7 +1,6 @@
 import './Cart.css';
 const Cart = ({ closeCart, cartItems = [], onDelete }) => {
    const summary = cartItems.reduce((summ, obj) => parseFloat(obj.price) + summ, 0);
-   console.log(summary);
    return (
       <div className="overlay">
          <div className="cart">
