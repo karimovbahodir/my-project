@@ -9,7 +9,7 @@ const ModalPass = (props) => {
 					<div className="input-form">
 						<input type="text" placeholder='Введите свой email' />
 					</div>
-					<button className="button button__main">
+					<button className="button button__main button__main-inner">
 						<div className="inner">Отправить</div>
 					</button>
 				</div>

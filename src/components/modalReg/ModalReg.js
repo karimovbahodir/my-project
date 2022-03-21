@@ -17,7 +17,7 @@ const ModalPass = (props) => {
 					<div className="input-form">
 						<input type="text" placeholder='Пароль' />
 					</div>
-					<button className="button button__main">
+					<button className="button button__main button__main-inner">
 						<div className="inner">Создать</div>
 					</button>
 				</div>
