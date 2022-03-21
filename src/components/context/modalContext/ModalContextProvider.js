@@ -6,6 +6,7 @@ export const ModalProvider=({children})=>{
 	const [modalOpaned, setModalOpaned]= useState(false);
 	const [modalContent, setModalContent]=useState(null);
 
+
 	const openModal=(modalConfig)=>{
 		
 		setModalContent(modalConfig);
