@@ -1,5 +1,4 @@
 import { useContext, useState } from 'react';
-import { ModalContext } from '../context';
 import './ModalReg.css'
 
 const ModalPass = ({ checkOut}) => {

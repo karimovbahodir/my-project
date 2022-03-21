@@ -27,6 +27,7 @@
 	border-radius: 10px;
 	font-size: 1rem;
 	cursor: pointer;
+	margin-left: 40px;
 }
 .button__main:hover{
 	background: #667caa;
@@ -48,3 +49,4 @@
 	color: #fff;
 	width: 20%;
 }
+

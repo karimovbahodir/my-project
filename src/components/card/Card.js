@@ -1,7 +1,7 @@
 import './Card.css';
 import {useState} from 'react';
 
-const Card = ({id, name, price, img, onPlus, onLike, favorite=false}) => {
+const Card = ({id, name, price, img, onPlus, onLike, favorite=false, loadingCard}) => {
    const [add, setAdd] = useState(false);
    const [like, setLike] = useState(favorite);
   const favoriteLike = ()=>{

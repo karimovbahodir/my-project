@@ -17,7 +17,10 @@ const ModalPass = ({closeModal, email, onChangeEmail, blurHandler, formValid, em
 						onBlur={e=>blurHandler(e)}
 						/>
 					</div>
-					<button className="button button__main" disabled={!formValid} >Отправить</button>
+
+					<button className="button button__main button__main-inner">
+						<div className="inner" onClick={closeModal}>Отправить</div>
+					</button>
 				</div>
 			</div>
 		</div>

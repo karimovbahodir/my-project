@@ -1,4 +1,5 @@
 import './Footer.css';
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
 	return (
@@ -8,7 +9,7 @@ const Footer = () => {
 					<a href='#' className='phone__number'>Phone number: +79061234567</a>
 					<a href='#' className='adress'>Adress: город Казань, ул. Братьев Касимовых</a>
 				</div>
-				<a href='#' className='appFooter__logo'>Logo</a>
+				<Link to="/" className='appFooter__logo'>Logo</Link>
 				<div className='social__media'>
 					<div><a href='#' className='vk'><img src="https://img.icons8.com/ios/50/000000/vk-circled--v2.png" /></a></div>
 					<div><a href='#' className='instagram'><img src="https://img.icons8.com/ios/50/000000/instagram-new--v2.png" /></a></div>
