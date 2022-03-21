@@ -1,8 +1,9 @@
 import {useState} from 'react';
 import Card from '../card/Card';
+import Spinner from '../spinner/Spinner';
 import './Cards.css';
 
-const Cards = ({onPlus, data, onLike}) => {
+const Cards = ({onPlus, data, onLike, loadingCard}) => {
    const [searching, setSearching] = useState('');
 
    const getSearchingValue = (e)=>{
@@ -25,8 +26,10 @@ const Cards = ({onPlus, data, onLike}) => {
       img={item.img}
       onPlus={() => onPlus(item)}
       onLike={()=> onLike(item)}
+      loadingCard
     />
    });
+   
    return (
       <div className="cards _container">
          <div className="cards__title">
@@ -42,7 +45,8 @@ const Cards = ({onPlus, data, onLike}) => {
          </div>
 
          <div className="cards__list">
-            {card}
+            {loadingCard ? <Spinner /> : card}
+            
          </div>
       </div>
    )
@@ -50,8 +54,3 @@ const Cards = ({onPlus, data, onLike}) => {
 
 
 export default Cards;
-
-
-// http://www.clker.com/cliparts/s/d/K/E/X/d/red-heart.svg
-// https://cdn.picpng.com/check/check-button-computer-icon-116893.png
-// https://endlessicons.com/wp-content/uploads/2013/06/heart-icon.png

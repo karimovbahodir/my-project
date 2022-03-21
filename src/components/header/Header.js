@@ -2,10 +2,11 @@ import { useContext } from "react";
 import { ModalContext } from "../context";
 import ModalReg from "../modalReg/ModalReg";
 import ModalPass from "../modalPass/ModalPass";
+import {Link} from 'react-router-dom';
 import './Header.css';
 
 
-const Header = ({ openCart, openFavorites }) => {
+const Header = ({ openCart }) => {
 
 	const { openModal } = useContext(ModalContext);
 
@@ -31,7 +32,7 @@ const Header = ({ openCart, openFavorites }) => {
 					<input type="text" placeholder='Введите номер телефона или email' />
 				</div>
 				<div className="input-form">
-					<input type="text" placeholder='Пароль' />
+					<input type="text" placeholder='Пароль'/>
 				</div>
 				<button className="button button__main">
 					<div className="inner">Войти</div>
@@ -50,11 +51,13 @@ const Header = ({ openCart, openFavorites }) => {
 		<div className="appHeader">
 			<div className="appHeader__container _container">
 				<div className="appHeader__logo">
-					<a href="#" className="appHeader__logo">Logo</a>
+					<Link to="/" className="appHeader__logo">Logo</Link>
 				</div>
 				<div className="icons">
-					<div className="favorites" onClick={openFavorites}>
-						<img src="https://img.icons8.com/material-outlined/32/000000/like--v1.png" />
+					<div className="favorites">
+						<Link to="/favorites">
+							<img src="https://img.icons8.com/material-outlined/32/000000/like--v1.png" />
+						</Link>
 					</div>
 					<div className="basket" onClick={openCart}>
 						<img src="https://cdn.icon-icons.com/icons2/1580/PNG/128/2849824-basket-buy-market-multimedia-shop-shopping-store_107977.png" />
